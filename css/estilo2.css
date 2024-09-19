@@ -1,0 +1,80 @@
+.contenedor{
+    background-color: rgb(168, 113, 218);
+    padding: 10px;
+    font-size: 23px;
+    text-align: center;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 5fr 1fr 1fr;
+    grid-template-areas: "header header header"
+                         "nav    nav    nav"
+                         "section section2 ads"
+                         "foot    foot    foot"
+                         "rrss1    rrss2    rrss3"
+    
+    ;
+}
+.contenedor .header{
+    background-color: yellow;
+    grid-column: header;
+}
+.contenedor .nav{
+    background-color: bisque;
+    grid-column: nav;
+}
+.contenedor .section{
+    background-color: azure;
+    grid-column: section;
+}
+.contenedor .section2{
+    background-color: azure;
+    grid-column: section2;
+}
+.contenedor .ads{
+    background-color: blanchedalmond;
+    grid-column: ads;
+    padding: 10px;
+    font-size: 10px;
+    text-align: center;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "d1"
+                         "d2"
+                         "d3"
+            ;
+    
+}
+
+.contenedor .ads .d1{
+
+    grid-row: d1;
+}
+.contenedor .ads .d2{
+    background-color: rgb(100, 207, 154);
+    grid-row: d2;
+}
+.contenedor .ads .d3{
+
+    grid-row: d3;
+}
+
+
+.contenedor .foot{
+    background-color: chartreuse;
+    grid-column: foot;
+}
+.contenedor .rrss1{
+    background-color: aquamarine;
+    grid-column: rrss1;
+}
+.contenedor .rrss2{
+    background-color: aquamarine;
+    grid-column: rrss2;
+}
+.contenedor .rrss3{
+    background-color: aquamarine;
+    grid-column: rrss3;
+}
+
